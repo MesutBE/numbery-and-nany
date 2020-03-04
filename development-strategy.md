@@ -4,8 +4,14 @@ Building this site one step at a time
 
 ## 0. Setup
 
-> * What files do you need to create?
-> * What are you putting in each file?
+| file name | role |
+| --- | --- |
+| index.html |  |
+| init.js |  |
+| log.js |  |
+| handler.js | to handle user input and make necessary calculations. |
+| listener.js | to listen user events |
+
 
 ## 1. Data & Log
 
