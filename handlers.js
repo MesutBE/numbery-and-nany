@@ -10,5 +10,13 @@ function removeHandler(event) {
 
 function resetHandler(event) {
     event.preventDefault();
-    console.log('resetHandler');
+    // reset state to initial values
+    entries.numbery = initValues.numbery;
+    entries.nany = initValues.nany;
+
+    // log interaction: handler name, new state
+    log.push({
+        handler: 'reset',
+        entries: JSON.parse(JSON.stringify(entries))
+    })
 }
