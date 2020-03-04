@@ -15,14 +15,14 @@
         <form id="user-form" class="centered margin-top-bottom">
             <input class="margin-top-bottom" type="text" name="textInput" placeholder="write something here!">
             <br>
-            <button class="margin-top-bottom">Save</button>
-            <button class="margin-top-bottom">Remove</button>
+            <button id="saveButton" class="margin-top-bottom">Save</button>
+            <button id="removeButton" class="margin-top-bottom">Remove</button>
             <br>
             <div style="display: flex; flex-direction: row;">
                 <div id="results-Numbers" style="width: 50vw; border: solid 1px grey;">Numbers</div>
                 <div id="results-NaNs" style="width: 50vw; border: solid 1px grey;">NaNs</div>
             </div>
-            <button class="margin-top-bottom">Save</button>
+            <button id="resetButton" class="margin-top-bottom">Reset</button>
         </form>
     </section>
     <script src="./listeners.js"></script>
