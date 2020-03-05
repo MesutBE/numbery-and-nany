@@ -1,0 +1,4 @@
+const initValues = {
+    numbery: [],
+    nany: []
+};
