@@ -9,7 +9,13 @@ function saveHandler(event){
     // re-render the user interface with values stored in state
     
     if (Number(newInput)){
-        entries.numbery = newInput;
+        // debugger;
+        if(entries.numbery.includes(newInput)){
+            alert(`Try another\n${newInput} exists in the list!`)
+            return;
+        }
+
+        entries.numbery.push(newInput);
 
         let liEl = document.createElement('LI');
         liEl.innerText = newInput;
@@ -33,7 +39,13 @@ function saveHandler(event){
 
         // console.log(log);
     } else {
-        entries.nany = newInput;
+
+        if (entries.nany.includes(newInput)) {
+            alert(`Try another\n${newInput} exists in the list!`)
+            return;
+        }
+
+        entries.nany.push(newInput);
 
         let liEl = document.createElement('LI');
         liEl.innerText = newInput;
