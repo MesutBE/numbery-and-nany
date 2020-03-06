@@ -75,9 +75,6 @@ function removeHandler(event) {
     event.preventDefault();
     let removed = [];
     newInput = document.getElementById('user-form').textInput.value;
-    console.log(newInput);
-    console.log(typeof newInput);
-    debugger;
 
     if (!isNaN(newInput)) {
         let indexOfnewInput = '';
