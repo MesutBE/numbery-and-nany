@@ -62,13 +62,15 @@ function saveHandler(event){
             div.appendChild(ulEl);
         }
     }
-    
+    document.getElementById('user-form').textInput.value = '';
+
     // log interaction: handler name, new state
     log.push({
         handler: 'save',
         newInput,
         entries: JSON.parse(JSON.stringify(entries))
     })
+    return true;
 }
 
 function removeHandler(event) {
@@ -95,13 +97,15 @@ function removeHandler(event) {
         ulEl.removeChild(ulEl.childNodes[indexOfnewInput]);
     }
 
+    document.getElementById('user-form').textInput.value = '';
+
     // log interaction: handler name, new state
     log.push({
         handler: 'reset',
         entries: JSON.parse(JSON.stringify(entries)),
         removed: JSON.parse(JSON.stringify(removed))
     })
-    console.log('removeHandler');
+    return true;
 }
 
 function resetHandler(event) {
@@ -127,10 +131,12 @@ function resetHandler(event) {
 
         parentUlEl.removeChild(ulEl);
     }
+    document.getElementById('user-form').textInput.value = '';
 
     // log interaction: handler name, new state
     log.push({
         handler: 'reset',
         entries: JSON.parse(JSON.stringify(entries))
     })
+    return true;
 }
