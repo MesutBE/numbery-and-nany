@@ -1,5 +1,3 @@
-# Numbery & NaNy
-
 # Project Numbery & NaNy
 
 ## Table of contents
